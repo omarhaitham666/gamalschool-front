@@ -57,7 +57,7 @@ function Login() {
           icon: 'success',
         }).then(() => {
           localStorage.setItem("token", token); 
-          setToken(token); 
+          setToken(token);
        
         });
       } catch (error) {

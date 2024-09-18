@@ -31,7 +31,7 @@ const inputValidation = Yup.object({
 const formik = useFormik({
   initialValues: initValues,
   validationSchema: inputValidation,
-  onSubmit: async (values) => {
+  onSubmit: async (values,{resetForm}) => { //add system reset form
     try {
       // إرسال البيانات إلى الـ Backend
       const response = await axios.post('/api/login', {
@@ -40,14 +40,14 @@ const formik = useFormik({
         // PasswordConfirmation: values.PasswordConfirmation
       });
 
+      console.log();
       
       Swal.fire({
         title: 'نجاح',
         text: 'تم التسجيل بنجاح',
         icon: 'success',
       }).then(() => {
-      
-        formik.resetForm();
+        formik.resetForm(); //change from formik.resetForm();
       });
     } catch (error) {
       let message = 'حدث خطأ أثناء التسجيل';
