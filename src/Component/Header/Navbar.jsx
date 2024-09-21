@@ -84,9 +84,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaTimes, FaBars } from "react-icons/fa";
 
+
+
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // حالة تسجيل الدخول
+  const [isLoggedIn, setIsLoggedIn] = useState(false); 
+
 
   const Links = [
     {
@@ -108,11 +111,11 @@ function Navbar() {
   ];
 
   const handleLogout = () => {
-    setIsLoggedIn(false); // تسجيل الخروج
+    setIsLoggedIn(false); 
   };
 
   const handleLogin = () => {
-    setIsLoggedIn(true); // تسجيل الدخول
+    setIsLoggedIn(true); 
   };
 
   return (
@@ -158,7 +161,7 @@ function Navbar() {
               </li>
             ))}
 
-            {/* زر تسجيل دخول أو تسجيل خروج بناءً على حالة isLoggedIn */}
+           
             {isLoggedIn ? (
               <button
                 onClick={handleLogout}
@@ -184,3 +187,11 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+
+
+
+
+
+

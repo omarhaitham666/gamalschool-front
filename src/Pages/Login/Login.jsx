@@ -5,12 +5,13 @@ import { useContext, useState } from "react";
 import ParticlesComponent from "../Particles/ParticlesComponent";
 import { useFormik } from "formik";
 import * as Yup from 'yup';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { AppContext } from "../../Context/AppContext";
 
 function Login() {
+  const navigate=useNavigate();
   const {  setToken } = useContext(AppContext);
   const [open, setOpen] = useState(false);
 
@@ -57,8 +58,9 @@ function Login() {
           icon: 'success',
         }).then(() => {
           localStorage.setItem("token", token); 
+          navigate("/");
           setToken(token);
-       
+          
         });
       } catch (error) {
         let message = 'حدث خطأ أثناء التسجيل';

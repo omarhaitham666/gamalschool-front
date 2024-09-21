@@ -12,11 +12,15 @@ import Report from "./Pages/Services/Report";
 import Uniform from "./Pages/Services/Uniform";
 
 
+
+
 function App() {
   return (
     <>
+    
       <Navbar />
-        <Routes>
+      
+      <Routes>
           <Route path="" element={<Home />} />
           <Route path="/teacher" element={<Teacher />} />
           <Route path="/achievement" element={<Achievement />} />
@@ -25,10 +29,13 @@ function App() {
           <Route path="/ReportService" element={<Report />} />
           <Route path="/UniformService" element={<Uniform />} />
           <Route path="/Register" element={<Register />} />
-          <Route path="/Login" element={<Login />} />
-
-        </Routes>
+          <Route path="/Login" element={ <Login /> } />
+          </Routes>
+      
       <Footer />
+      
+     
+    
     </>
   );
 }

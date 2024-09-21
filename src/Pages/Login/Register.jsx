@@ -11,7 +11,7 @@ import Swal from 'sweetalert2';
 import AppProvider, { AppContext } from "../../Context/AppContext";
 
 function Register() {
-  // const{token,setToken}=useContext(AppContext)
+  const{token,setToken}=useContext(AppContext)
   const[open,setOpen]=useState(false)
   const initValues = {
     Email: "",

@@ -6,7 +6,7 @@ const Logout = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.post('/logout', {}, {
+      await axios.post('/api/logout', {}, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }
