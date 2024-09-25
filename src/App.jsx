@@ -10,11 +10,15 @@ import Register from "./Pages/Login/Login";
 import TabletService from "./Pages/Services/TabletService";
 import Report from "./Pages/Services/Report";
 import Uniform from "./Pages/Services/Uniform";
+import { useContext } from "react";
+import { AppContext } from "./Context/AppContext";
+import AdminDashboard from "./Pages/Dashboard/AdminDashboard";
 
 
 
 
 function App() {
+  const{user}=useContext(AppContext);
   return (
     <>
     
@@ -28,9 +32,10 @@ function App() {
           <Route path="/TabletService" element={<TabletService />} />
           <Route path="/ReportService" element={<Report />} />
           <Route path="/UniformService" element={<Uniform />} />
-          <Route path="/Register" element={<Register />} />
-          <Route path="/Login" element={ <Login /> } />
-          </Routes>
+          <Route path="/Register" element={user?<Home />:<Register />} />
+          <Route path="/Login" element={user?<Home />: <Login /> } />
+          <Route path="/AdminDashboard" element={<AdminDashboard />} />
+        </Routes>
       
       <Footer />
       

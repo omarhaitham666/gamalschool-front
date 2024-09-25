@@ -12,7 +12,8 @@ import { AppContext } from "../../Context/AppContext";
 
 function Login() {
   const navigate=useNavigate();
-  const {  setToken } = useContext(AppContext);
+  const { token, setToken } = useContext(AppContext);
+  
   const [open, setOpen] = useState(false);
 
   
