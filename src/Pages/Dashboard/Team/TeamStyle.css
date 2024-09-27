@@ -1,0 +1,152 @@
+/* .table{
+    position: relative !important;
+    width: 85% !important;
+    /* height: 80vh !important; */
+    /* margin: auto;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 20px !important; */
+/* } */
+
+/* table{
+    position: relative;
+    width: 100% !important;
+    border-radius: 8px;
+    box-shadow: 2px 6px 8px 0px rgb(236,236,236);
+    /* background-color: #fff; */
+    /* color: white;
+    overflow: hidden; */
+    /* margin-bottom: 150px;
+}
+thead tr td{
+    background-color: rgb(47,117,230);
+    padding: 1rem;
+    font-weight:700;
+}
+thead tr td:first-child{
+    padding: 0.5rem;
+    text-align: center;
+}
+tbody tr td{
+    padding: 0.7rem;
+    /* border-bottom: 3px solid rgb(218,218,218); */
+/* } */
+
+/* tbody tr td:first-child{ */
+    /* padding:0.4rem;
+    text-align: center;
+    border-right: 1px solid rgb(228,228,228); */
+/* } */
+/* 
+tbody tr:nth-of-type(even){
+    background-color:rgb(47,117,230) ;
+} */
+
+
+/* .table-container {
+    width: 100%;
+    overflow-x: auto;
+  } */
+  
+  /* table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    min-width: 120px;
+  } */
+  
+  /* @media (max-width: 640px) {
+    th, td {
+      min-width: 100px; */
+    /* }
+  } */ 
+
+
+
+  .team-home {
+    padding: 20px;
+  }
+  
+  .team-home h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .team-home table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .team-home th, .team-home td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .team-home th {
+    background-color: #2F75E6;
+    color: white;
+  }
+  
+  .profile-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-button {
+    background-color: #F44336;
+    color: white;
+  }
+  
+  .delete-button:hover {
+    background-color: #da190b;
+  }
+  
+  /* استجابة الجدول للشاشات الصغيرة */
+  @media screen and (max-width: 600px) {
+    .team-home table, .team-home thead, .team-home tbody, .team-home th, .team-home td, .team-home tr {
+      /* display: block; */
+    }
+  
+    .team-home thead tr {
+      /* display: none; */
+    }
+  
+    .team-home tr {
+      margin-bottom: 15px;
+    }
+  
+    .team-home td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    .team-home td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  
+    .delete-button {
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
+  

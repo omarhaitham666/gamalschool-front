@@ -2,8 +2,9 @@
 
 import React from 'react';
 import { Link, Routes, Route } from 'react-router-dom'; // استيراد Link و Routes
+// import { BrowserRouter as Router, Route, Routes,Link } from "react-router-dom";
 import './DashStylesheet.css';
-import Teamwork from './Teamwork';
+import TeamHome from './Team/TeamHome';
 // استيراد الصفحات الأخرى حسب الحاجة
 
 function AdminDashboard() {
@@ -22,7 +23,7 @@ function AdminDashboard() {
                 <Link to="/AdminDashboard/overview" className="nav-link">الصفحة الرئيسية</Link>
               </li>
               <li>
-                <Link to="/AdminDashboard/teamwork" className="nav-link">فريق العمل</Link>
+                <Link to="/teamhome" className="nav-link">فريق العمل</Link>
               </li>
               <li>
                 <Link to="/AdminDashboard/achievements" className="nav-link">الانجازات</Link>
@@ -45,7 +46,7 @@ function AdminDashboard() {
       <div className="dashboard-content">
        
         <Routes>
-          <Route path="/AdminDashboard/teamwork" element={<Teamwork />} />
+          <Route path="/AdminDashboard/teamhome" element={<TeamHome />} />
           <Route path="/AdminDashboard/overview" element={<div>محتوى الصفحة الرئيسية</div>} />
           <Route path="/AdminDashboard/achievements" element={<div>محتوى الإنجازات</div>} />
           <Route path="/AdminDashboard/tabletService" element={<div>محتوى خدمة التابلت</div>} />
