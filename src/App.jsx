@@ -12,9 +12,7 @@ import Report from "./Pages/Services/Report";
 import Uniform from "./Pages/Services/Uniform";
 import { useContext } from "react";
 import { AppContext } from "./Context/AppContext";
-import AdminDashboard from "./Pages/Dashboard/AdminDashboard";
-import TeamHome from "./Pages/Dashboard/Team/TeamHome";
-import TeamCreate from "./Pages/Dashboard/Team/TeamCreate";
+
 
 
 
@@ -36,9 +34,6 @@ function App() {
           <Route path="/UniformService" element={<Uniform />} />
           <Route path="/Register" element={user?<Home />:<Register />} />
           <Route path="/Login" element={user?<Home />: <Login /> } />
-          <Route path="/AdminDashboard" element={<AdminDashboard />} />
-          <Route path="/teamHome" element={<TeamHome />} />
-          <Route path="/teamCreate" element={<TeamCreate />} />
 
 
         </Routes>

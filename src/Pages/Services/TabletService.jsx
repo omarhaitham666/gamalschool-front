@@ -54,12 +54,6 @@ function TabletService() {
         phone2: Yup.string()
             .matches(/^[0-9]{11}$/, "يجب أن يحتوي رقم الهاتف على 11 رقمًا")
             .required("هذا الحقل مطلوب"),
-        code: Yup.string()
-            .min(5, "الكود لا يجب أن يقل عن 5 أحرف")
-            .max(20, "الكود لا يجب أن يزيد عن 20 حرف")
-            .required("هذا الحقل مطلوب"),
-            selectgrd: Yup.string()
-            .required("هذا الحقل مطلوب"),
     });
     
     
@@ -109,17 +103,6 @@ function TabletService() {
     ) : null}
             </div>
             </div>
-
-            <div className=''>
-            <div className="input-box">
-                <label htmlFor="" className='text-white'>  كود    </label>
-                <input type="text" placeholder='ادخل الكود  '   name='code'  onChange={formik.handleChange} value={formik.values.code}  onBlur={formik.handleBlur}   />
-                {formik.touched.code && formik.errors.code ? (
-      <p className='text-red-500'>{formik.errors.code}</p>
-    ) : null}
-            </div>
-            </div>
-
             <div className='flex items-center justify-center'>
                 <select name="selectgrd" id="" className='mt-4 text-center'  onChange={formik.handleChange} value={formik.values.selectgrd} onBlur={formik.handleBlur}  >
                     <option selected disabled>

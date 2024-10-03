@@ -47,10 +47,6 @@ function Navbar() {
       name: "خدماتنا",
       link: "/services",
     },
-    {
-      name: "dashboard",
-      link: "/AdminDashboard",
-    },
   ];
 
   // const handleLogout = () => {
