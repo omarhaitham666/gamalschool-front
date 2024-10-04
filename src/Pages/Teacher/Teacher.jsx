@@ -8,7 +8,7 @@ function Teacher() {
 
   useEffect(() => {
     const fetchTeams = async () => {
-      const response = await fetch('http://127.0.0.1:8000/api/teams');
+      const response = await fetch('api/teams');
       const data = await response.json();
       setTeams(data);
     };
