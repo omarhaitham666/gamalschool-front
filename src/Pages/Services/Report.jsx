@@ -163,7 +163,7 @@ function Report() {
           
             <div className='text-center'>
               <p className='text-red-500 mb-4'>يجب عليك تسجيل الدخول لاستخدام هذه الخدمة.</p>
-              <Link to="/Login" className='btn-login px-4 py-2 bg-green-500 text-white rounded'>
+              <Link to="/register" className='btn-login px-4 py-2 bg-green-500 text-white rounded'>
                 تسجيل الدخول
               </Link>
             </div>
