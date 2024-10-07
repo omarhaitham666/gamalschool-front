@@ -21,16 +21,15 @@ function Achievement() {
       }, []);
 
   return (
-    <div className="body h-[100%]">
+    <div className="body h-[100%] ">
       <div id="card-idea">
         <div className="wrapper">
           <div className="box-area">
-            {/* {achievements.map((achievement) => ( */}
             {achievements.length === 0 ? (
               <div>لا توجد إنجازات لعرضها.</div>
             ) : (
               achievements.map((achievement) => (
-              <div className="box" key={achievement.id}>
+              <div className="box mt-28" key={achievement.id}>
                 <img src={`/storage/${achievement.pic}`} alt="" />
                 <div className="overlay">
                   <h3>{achievement.name}</h3>
