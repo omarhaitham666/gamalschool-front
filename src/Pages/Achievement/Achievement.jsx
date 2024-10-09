@@ -30,7 +30,7 @@ function Achievement() {
             ) : (
               achievements.map((achievement) => (
               <div className="box mt-28" key={achievement.id}>
-                <img src={`/storage/${achievement.pic}`} alt="" />
+                <img src={`${achievement.pic}`} alt="" />
                 <div className="overlay">
                   <h3>{achievement.name}</h3>
                   <p>{achievement.title}</p>

@@ -24,7 +24,7 @@ function Teacher() {
         {teams.map((Team) => (
           <div className="team-card" key={Team.id}>
             <div className="team-image">
-              <img src={`/storage/${Team.pic}`} alt={Team.name} />
+              <img src={`${Team.pic}`} alt={Team.name} />
             </div>
             <div className="team-detail">
               <h3>{Team.name}</h3>
