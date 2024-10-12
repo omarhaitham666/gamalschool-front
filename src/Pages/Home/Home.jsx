@@ -77,7 +77,8 @@ function Home() {
       </div>
 
       <div className='bg-white/10 p-8  duration-500 cursor-pointer group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 rounded-xl mix-blend-luminosity'>
-        <img src="./images/ceo-midjourney-office.webp" alt="" className='h-20 rounded-full    mx-auto' />
+        {/* <img src=".public/images/ceo-midjourney-office.webp" alt="" className='h-20 rounded-full    mx-auto' /> */}
+        <img src="../../../public/images/27.jpg" alt="" className='h-20 rounded-full    mx-auto' />
         <h4 className='text-xl font-bold text-white'>السيدة/ سحر  </h4>
         <small className='text-white font-bold'>مديرة المدرسة</small>
         <p className='text-md leading-7 my-3 font-light opacity-50 text-white'>
